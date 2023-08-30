@@ -1,0 +1,5 @@
+/* Add this style to center the video within the popup */
+.popup-content video {
+    display: block;
+    margin: 0 auto;
+}
