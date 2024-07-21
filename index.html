@@ -372,16 +372,16 @@
 								</div>
 								<div class="modal-body">
 								<p>For my final project for the class Self Driving Cars with Duckietown at ETH Zurich, I programmed an autonomous intersection navigation behavior that allows multiple cars to safely navigate intersections.</p>
-								<p>The duckiebots can follow lane markings using a histogram filter for state estimation. \
-									Using their camera, they can detect the red intersection markings and determine the available turn options. \
-									I trained a YOLOv5 object detection model on images of duckiebots to be able to recognize when another bot is \
-									at an intersection. Whenever a duckiebot is detected on the right side of the screen, the bot will wait \
-									at the intersection until the other bot moves. When the intersection is clear, the duckiebot will execute its action, \
+								<p>The duckiebots can follow lane markings using a histogram filter for state estimation. 
+									Using their camera, they can detect the red intersection markings and determine the available turn options. 
+									I trained a YOLOv5 object detection model on images of duckiebots to be able to recognize when another bot is 
+									at an intersection. Whenever a duckiebot is detected on the right side of the screen, the bot will wait 
+									at the intersection until the other bot moves. When the intersection is clear, the duckiebot will execute its action, 
 									using PID control based on the wheel motor encoder readings to achieve a desired turn or straight action.
 								</p>
 								<img src="images/intersection_mask.png" alt="duckiebot" width="100%">
-								<p> The duckiebots detect intersections by applying a gaussian filter and a red color mask. \
-									Then, based on the number and location of red (white) intersection markers detected, they determine \
+								<p> The duckiebots detect intersections by applying a gaussian filter and a red color mask. 
+									Then, based on the number and location of red (white) intersection markers detected, they determine 
 									the available actions for the intersection (straight, right, left).
 								</p>
 
@@ -395,11 +395,11 @@
 								</video>
 								<p> The right of way rule allows for up to three duckiebots to safely navigate intersections</p>
 								<video width = "100%" controls> 
-									<source src = "images/duck_rightofway.MP4" type = "video/MP4">
+									<source src = "images/3duck.mp4" type = "video/MP4">
 								</video>
 
-								<p>As a next step, I wanted the duckiebots to be able to communicate using their LED's. I was able to \
-									get an LED detection model, but I did not have time to use it to add any interesting behaviors. \ 
+								<p>As a next step, I wanted the duckiebots to be able to communicate using their LED's. I was able to 
+									get an LED detection model, but I did not have time to use it to add any interesting behaviors. 
 								</p>
 								<img src="images/LED_detect.png" alt="duckiebot" width="100%">
 
