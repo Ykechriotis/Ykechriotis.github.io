@@ -50,8 +50,8 @@
 
 								<div class="image2-container2">
 									<div class="image2-overlay"></div>
-									<img src="images/haptic_robot.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modalduck">
-									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modalduck">View</div>
+									<img src="images/haptic_robot.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modalfinger">
+									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modalfinger">View</div>
 								</div>
 								
 								<h3>Haptic Telemanipulation Capstone Project</h3>
@@ -69,7 +69,6 @@
 								</div>
 								
 								<h3>Autonomous Intersection Navigation</h3>
-								<p>For my final project for the class Self Driving Cars with Duckietown at ETH Zurich, I programmed an autonomous intersection navigation behavior that allows multiple cars to safely navigate intersections.</p>
 							</article>
 
 
@@ -83,7 +82,7 @@
 								</div>
 
 								<h3>KUKA youBot Simulation and Control</h3>
-								<p>A simulation of the KUKA youBot performing a pick-and-place motion. All code was written in MATLAB using the Modern Robotics code library. The code generates the end effector trajectory based on the desired pick-and-place locations, then uses a PI feedback controller to apply joint forces to follow the trajectory.</p>
+
 							</article>
 
 
@@ -97,9 +96,7 @@
 								</div>
 								
 								<h3>Combat Robotics</h3>
-								<p>I build combat robots with the Northwestern University Robotics Club. We compete in tournaments all over the country. Recently I've been redesigning one of our mini bots, Junior, to replace its aluminum chassis with a 3D printed unibody. I also design parts for our 30lb robots, and machine them using conversational and CNC milling.</p>
-			
-								<p> (Photo is from JCRB Photo at Norwalk Havoc)</p>
+	
 							</article>
 
 
@@ -115,7 +112,6 @@
 								
 
 								<h3>2D Physics Engines</h3>
-								<p>Physics simulations of a dice bouncing in a box and a trebuchet firing. The simulations were made in Python using SymPy and NumPy, and use both lagrangian dynamics and rigid body transformations to generate the trajectories.</p>
 							</article>
 
 
@@ -132,7 +128,6 @@
 								
 
 								<h3>Robot Swarm Behaviors</h3>
-								<p>I simulated three robot swarm behaviors. The first uses "hop count" to determine a coordinate system and display a Northwestern N. The second sorts the robots into cocentric rings based on the Brazil nut effect. The third simulates Reynold's flocking. I also implemented the flocking behavior on a small swarm of real robots.</p>
 							</article>
 
 
@@ -147,7 +142,6 @@
 								
 
 								<h3>Line Follower</h3>
-								<p> I built a line following robot. I used SOLIDWORKS to design custom laser cut and 3D printed parts, and KiCAD to design PCB's for my microcontrollers and other components. The robot uses a Raspberry Pi Pico W to read a downward facing camera and display its view on an OLED screen. The camera data is sent to a PIC32 microcontroller, which sends PWM signals to the drive motors based on a PID feedback loop. </p>
 							</article>
 							
 
@@ -169,6 +163,8 @@
 								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
+									<p>Physics simulations of a dice bouncing in a box and a trebuchet firing. The simulations were made in Python using SymPy and NumPy, and use both lagrangian dynamics and rigid body transformations to generate the trajectories.</p>
+
 									<video width = "100%" controls> 
 										<source src = "images/DICE_IN_BOX_fast.mp4" type = "video/mp4">
 									</video>
@@ -217,8 +213,9 @@
 									  margin-left: 20px; /* Adjust the value as needed */
 									}
 								  </style>
-								  
-								  <p class="indented-paragraph">Made with SOLIDWORKS.</p>
+								  <p> I built a line following robot. I used SOLIDWORKS to design custom laser cut and 3D printed parts, and KiCAD to design PCB's for my microcontrollers and other components. The robot uses a Raspberry Pi Pico W to read a downward facing camera and display its view on an OLED screen. The camera data is sent to a PIC32 microcontroller, which sends PWM signals to the drive motors based on a PID feedback loop. </p>
+
+								  <!-- <p class="indented-paragraph">Made with SOLIDWORKS.</p> -->
 								  
 								<div class="modal-footer">
 								  <button class="btn btn-primary" data-bs-target="#exampleModalToggle24" data-bs-toggle="modal">Next</button>
@@ -256,6 +253,8 @@
 								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
+									<p>I build combat robots with the Northwestern University Robotics Club. We compete in tournaments all over the country. Recently I've been redesigning one of our mini bots, Junior, to replace its aluminum chassis with a 3D printed unibody. I also design parts for our 30lb robots, and machine them using conversational and CNC milling.</p>
+									<p> (Cover photo is from JCRB Photo at Norwalk Havoc)</p>
 									<p> Junior is a minibot that fights alongside our 30lb combat robots allowing us to get a weight bonus. Currently it has an aluminum chassis that takes a long time to machine and repair. </p>
 									<img src="images/JR_frame.jpg" alt="ME433 CAD" width="100%">
 									<img src="images/JR_elec_front.jpg" alt="ME433 CAD" width="100%">
@@ -304,6 +303,8 @@
 								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
+									<p>I simulated three robot swarm behaviors. The first uses "hop count" to determine a coordinate system and display a Northwestern N. The second sorts the robots into cocentric rings based on the Brazil nut effect. The third simulates Reynold's flocking. I also implemented the flocking behavior on a small swarm of real robots.</p>
+
 									<img src="images/swarm_hop_count.png" alt="ME433 CAD" width="100%">
 									<p> The robots in this simulated swarm do not know their absolute position from the start, except for two "node" robots on the bottom corners. The robots form a coordinate system by sending "hop count" messages to their neighbors that tell them how far away form each node they are. Using these hop counts, each robot can triangulate their approximate coordinates, and use them to decide whether or not they should light up to form the Northwestern N or not.</p>
 									<br><br>
@@ -351,6 +352,8 @@
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
+								<p>A simulation of the KUKA youBot performing a pick-and-place motion. All code was written in MATLAB using the Modern Robotics code library. The code generates the end effector trajectory based on the desired pick-and-place locations, then uses a PI feedback controller to apply joint forces to follow the trajectory. </p>
+
 								<video width = "100%" controls> 
 									<source src = "images/best_animation.mp4" type = "video/mp4">
 								</video>
@@ -369,10 +372,39 @@
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
+								<p>For my final project for the class Self Driving Cars with Duckietown at ETH Zurich, I programmed an autonomous intersection navigation behavior that allows multiple cars to safely navigate intersections.</p>
+								<p>The duckiebots can follow lane markings using a histogram filter for state estimation. \
+									Using their camera, they can detect the red intersection markings and determine the available turn options. \
+									I trained a YOLOv5 object detection model on images of duckiebots to be able to recognize when another bot is \
+									at an intersection. Whenever a duckiebot is detected on the right side of the screen, the bot will wait \
+									at the intersection until the other bot moves. When the intersection is clear, the duckiebot will execute its action, \
+									using PID control based on the wheel motor encoder readings to achieve a desired turn or straight action.
+								</p>
+								<img src="images/duckiebots_intersection.png" alt="duckiebot" width="100%">
+								<p> The duckiebots detect intersections by applying a gaussian filter and a red color mask. \
+									Then, based on the number and location of red (white) intersection markers detected, they determine \
+									the available actions for the intersection (straight, right, left).
+								</p>
+
+								<img src="images/duckiebot_detection.jpg" alt="duckiebot" width="100%">
+								<p> YOLOv5 duckiebot detection output.
+								</p>
+
+								<p> Below is a video of the resulting behavior</p>
 								<video width = "100%" controls> 
-									<source src = "images/3duck.MOV" type = "video/MOV">
+									<source src = "images/ducks_longvid.MP4" type = "video/MP4">
 								</video>
-								<p> Three duckiebots navigating an intersection.</p>
+								<p> The right of way rule allows for up to three duckiebots to safely navigate intersections</p>
+								<video width = "100%" controls> 
+									<source src = "images/duck_rightofway.MP4" type = "video/MP4">
+								</video>
+
+								<p>As a next step, I wanted the duckiebots to be able to communicate using their LED's. I was able to \
+									get an LED detection model, but I did not have time to use it to add any interesting behaviors.
+								</p>
+								<img src="images/LED_detect.png" alt="duckiebot" width="100%">
+
+
 								</div>
 
 							</div>
@@ -387,10 +419,6 @@
 					<br><br>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										Arlington, MA<br />
-									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
 										617-909-9673
