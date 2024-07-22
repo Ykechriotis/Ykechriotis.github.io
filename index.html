@@ -42,7 +42,7 @@
 					
 				<!-- Two -->
 					<section id="two">
-						<h2>Engineering Projects</h2>
+						<h2> Engineering Projects</h2>
 						<div class="row">
 							
 
@@ -54,7 +54,8 @@
 									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modalfinger">View</div>
 								</div>
 								
-								<h3>Haptic Telemanipulation Capstone Project</h3>
+								<h3><b> Haptic Telemanipulation Capstone Project</b></h3>
+								<p> <b> Skills: </b> CAD (Onshape), Mechanical design, Mechatronics</p>
 							</article>
 
 
@@ -67,7 +68,8 @@
 									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modalduck">View</div>
 								</div>
 								
-								<h3>Autonomous Intersection Navigation</h3>
+								<h3><b> Autonomous Intersection Navigation</b></h3>
+								<p> <b> Skills: </b> Python, OpenCV, State Estimation, Multi-agent path planning, PID Control</p>
 							</article>
 
 
@@ -80,22 +82,9 @@
 									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modal2">View</div>
 								</div>
 
-								<h3>KUKA youBot Simulation and Control</h3>
+								<h3><b>KUKA youBot Simulation and Control </b></h3>
+								<p> <b> Skills: </b> Robot Dynamics, MATLAB, PID Control</p>
 
-							</article>
-
-
-
-							<article class="col-6 col-12-xsmall work-item">
-
-								<div class="image2-container2">
-									<div class="image2-overlay"></div>
-									<img src="images/combat_robotics.jpg" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
-									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modal6">View</div>
-								</div>
-								
-								<h3>Combat Robotics</h3>
-	
 							</article>
 
 
@@ -110,10 +99,23 @@
 								
 								
 
-								<h3>2D Physics Engines</h3>
+								<h3><b> 2D Physics Engines</b></h3>
+								<p> <b> Skills: </b> Python, Numpy, Sympy, Coordinate transformations, Lagrangian dynamics</p>
 							</article>
 
+							<article class="col-6 col-12-xsmall work-item">
 
+								<div class="image2-container2">
+									<div class="image2-overlay"></div>
+									<img src="images/combat_robotics.jpg" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
+									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modal6">View</div>
+								</div>
+								
+								<h3><b>Combat Robotics  </b></h3>
+								<p> <b> Skills: </b> CAD (SolidWorks), Mechanical design, Manufacturing</p>
+								<p> <i> Cover photo is from JCRB Photo at Norwalk Havoc</i></p>
+	
+							</article>
 
 
 							<article class="col-6 col-12-xsmall work-item">
@@ -124,9 +126,8 @@
 									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modal3">View</div>
 								</div>
 								
-								
-
-								<h3>Robot Swarm Behaviors</h3>
+								<h3><b> Robot Swarm Behaviors</b></h3>
+								<p> <b> Skills: </b> Python, Swarm algorithms</p>
 							</article>
 
 
@@ -138,9 +139,8 @@
 									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modal4">View</div>
 								</div>
 								
-								
-
-								<h3>Line Follower</h3>
+								<h3><b> Line Follower</b></h3>
+								<p> <b> Skills: </b> C, Python, Microcontrollers, PID Control, UART, SPI, PCB Design</p>
 							</article>
 							
 
@@ -155,7 +155,7 @@
 
 
 						<div class="modal fade" id="modal1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-							<div class="modal-dialog  modal-dialog-centered">
+							<div class="modal-dialog  modal-lg modal-dialog-centered">
 							  <div class="modal-content">
 								<div class="modal-header">
 								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <strong>Dice in Box Simulation </strong></h1>
@@ -163,10 +163,11 @@
 								</div>
 								<div class="modal-body">
 									<p>Physics simulations of a dice bouncing in a box and a trebuchet firing. The simulations were made in Python using SymPy and NumPy, and use both lagrangian dynamics and rigid body transformations to generate the trajectories.</p>
-
-									<video width = "100%" controls> 
-										<source src = "images/DICE_IN_BOX_fast.mp4" type = "video/mp4">
-									</video>
+									<div class="text-center">
+										<video width = "70%" controls> 
+											<source src = "images/DICE_IN_BOX_fast.mp4" type = "video/mp4">
+										</video>
+									</div>
 									<p> A simulation of a dice being shaken around in a box.</p>
 								</div>
 								<div class="modal-footer">
@@ -253,7 +254,6 @@
 								</div>
 								<div class="modal-body">
 									<p>I build combat robots with the Northwestern University Robotics Club. We compete in tournaments all over the country. Recently I've been redesigning one of our mini bots, Junior, to replace its aluminum chassis with a 3D printed unibody. I also design parts for our 30lb robots, and machine them using conversational and CNC milling.</p>
-									<p> (Cover photo is from JCRB Photo at Norwalk Havoc)</p>
 									<p> Junior is a minibot that fights alongside our 30lb combat robots allowing us to get a weight bonus. Currently it has an aluminum chassis that takes a long time to machine and repair. </p>
 									<img src="images/JR_frame.jpg" alt="ME433 CAD" width="100%">
 									<img src="images/JR_elec_front.jpg" alt="ME433 CAD" width="100%">
@@ -351,12 +351,14 @@
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-								<p>A simulation of the KUKA youBot performing a pick-and-place motion. All code was written in MATLAB using the Modern Robotics code library. The code generates the end effector trajectory based on the desired pick-and-place locations, then uses a PI feedback controller to apply joint forces to follow the trajectory. </p>
+								<p>A simulation of the KUKA youBot performing a pick-and-place motion. All code was written in MATLAB
+									 using the Modern Robotics code library. The code generates the end effector trajectory based on
+									  the desired pick-and-place locations, then uses a PI feedback controller to apply joint forces 
+									  resulting in correct end-effector twists to follow the trajectory. </p>
 
 								<video width = "100%" controls> 
 									<source src = "images/best_animation.mp4" type = "video/mp4">
 								</video>
-								<p> Simulation of a pick-and-place motion made in CoppeliaSim. I wrote MATLAB scripts using the Modern Robotics code library to generate the end effector trajectory and commended end effector twists based on a PI feedback controller </p>
 								</div>
 
 							</div>
@@ -379,31 +381,80 @@
 									at the intersection until the other bot moves. When the intersection is clear, the duckiebot will execute its action, 
 									using PID control based on the wheel motor encoder readings to achieve a desired turn or straight action.
 								</p>
-								<img src="images/intersection_mask.png" alt="duckiebot" width="100%">
-								<p> The duckiebots detect intersections by applying a gaussian filter and a red color mask. 
-									Then, based on the number and location of red (white) intersection markers detected, they determine 
-									the available actions for the intersection (straight, right, left).
-								</p>
+								<div class="text-center">
 
-								<img src="images/duckiebot_detection.jpg" alt="duckiebot" width="100%">
-								<p> YOLOv5 duckiebot detection output.
-								</p>
+									<img src="images/intersection_mask.png" alt="duckiebot" width="60%">
+									<p> The duckiebots detect intersections by applying a gaussian filter and a red color mask. 
+										Then, based on the number and location of red (white) intersection markers detected, they determine 
+										the available actions for the intersection (straight, right, left).
+									</p>
+								</div>
+
+								<div class="text-center">
+
+									<img src="images/duckiebot_detection.jpg" alt="duckiebot" width="60%">
+									<p> YOLOv5 duckiebot detection output.
+									</p>
+								</div>
+
+				
+								<div class="text-center">
+									<video width = "60%" controls> 
+										<source src = "images/duck_lanefollow.mp4" type = "video/MP4">
+									</video>
+									<p> Duckiebot lane following</p>
+								</div>
+
 
 								<p> Below is a video of the resulting behavior</p>
-								<video width = "100%" controls> 
-									<source src = "images/ducks_longvid.MP4" type = "video/MP4">
-								</video>
+								<div class="text-center">
+									<video width = "40%" controls> 
+										<source src = "images/ducks_longvid.MP4" type = "video/MP4">
+									</video>
+								</div>
+
 								<p> The right of way rule allows for up to three duckiebots to safely navigate intersections</p>
-								<video width = "100%" controls> 
+								<div class="text-center">
+								<video width = "60%" controls> 
 									<source src = "images/3duck.mp4" type = "video/MP4">
 								</video>
+								</div>
 
 								<p>As a next step, I wanted the duckiebots to be able to communicate using their LED's. I was able to 
 									get an LED detection model, but I did not have time to use it to add any interesting behaviors. 
 								</p>
-								<img src="images/LED_detect.png" alt="duckiebot" width="100%">
+								<div class="text-center">
 
+									<img src="images/LED_detect.png" alt="duckiebot" width="60%">
+								</div>
 
+								<div class="modal-footer">
+									<button class="btn btn-primary" data-bs-target="#modalPDM4AR" data-bs-toggle="modal">Next</button>
+								</div>
+
+								</div>
+
+							</div>
+							</div>
+						</div>
+						<div class="modal fade" id="modalPDM4AR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Multi-Agent Planner</strong></h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p>For one of my other classes at ETH Zurich, Planning and Decision making for Autonomous Robots,
+									I programmed a multi agent path planner for differential drive robots. While I initially tried using 
+									an RRT based planner, whate ended up working best was a grid based approach. The robots construct an intial path
+									to their respective goals, and then recalculate their plan whenever they encounter another agent on their path.
+								</p>
+
+								<video width = "100%" controls> 
+									<source src = "images/4bot_path_planning.mp4" type = "video/mp4">
+								</video>
+								<p> </p>
 								</div>
 
 							</div>
@@ -419,10 +470,51 @@
 								</div>
 								<div class="modal-body">
 								<p>For my capstone project at Northwestern University, my team built a haptic finger and thumb interface to teleoperate a robot finger and thumb and perform dexterous tasks. The goal was to achieve high stiffness bilateral control between the two systems. I was mainly responsible for the mechanical design of the haptic finger. </p>
-			
-								<img src="images/finger_prototype.jpg" alt="finger" width="100%">
-								<p> Here is an initial prototype.
+								<div class="text-center">
+
+									<img src="images/haptic_finger_built.png" alt="finger" width="60%">
+									<p> The Haptic Finger</p>
+
+								</div>
+								<p> Our design had three rotational degrees of freedom. Two were actuated (MP and IP joint), and one passive at the fingertip. </p>
+								<div class="text-center">
+
+									<img src="images/haptic_finger_CAD.png" alt="finger" width="60%">
+									<p> CAD Model</p>
+
+								</div>
+
+								<p> We used cable drive transmissions to achieve zero backlash, low friction actuation. 
+									The main disadvantage of cable drives, their limited range of motion, was not an issue
+									since we don't want the system to overextend the user's finger in any way, so the joint limits were a benefit.
+									The design features nested cable wheels that rotate independently on a fixed shaft. This saved space and kept 
+									forces restricted mostly to one plane, although the assembly process was made a little more difficult.
 								</p>
+
+								<div class="text-center">
+
+									<img src="images/haptic_finger_cables.png" alt="finger" width="60%">
+									<p> Cable drives</p>
+
+								</div>
+
+								<p> For motors, we chose Maxon ECX Torque 22XL motors for their high torque, high torque constant, 
+									and very low rotor inertia. We wanted to keep inertia in our system as low as possible to maximize
+									torque transparency for the end user. These brushless motors are controlled using field oriented control
+									with magnetic encoders.
+								</p>
+
+								<p> 
+									With our combined haptic/robot finger/thumb interface, we achieved a 500 N/m virtual object stiffness
+									(enough to tell the difference in hardness between different objects during teleoperation), and could
+									could complete various dextrous tasks such as a pinch grip, and unscrewing a vial.
+								</p>
+								<div class="text-center">
+								<video width = "80%" controls> 
+									<source src = "images/highlight.mp4" type = "video/MP4">
+								</video>
+
+								</div>
 
 
 								</div>
