@@ -122,7 +122,7 @@
 
 								<div class="image2-container2">
 									<div class="image2-overlay"></div>
-									<img src="images/swarms.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+									<img src="images/robot_swarm.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
 									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modal3">View</div>
 								</div>
 								
@@ -158,62 +158,56 @@
 							<div class="modal-dialog  modal-lg modal-dialog-centered">
 							  <div class="modal-content">
 								<div class="modal-header">
-								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <strong>Dice in Box Simulation </strong></h1>
+								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <strong>2D Physics Engines </strong></h1>
 								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
 									<p>Physics simulations of a dice bouncing in a box and a trebuchet firing. The simulations were made in Python using SymPy and NumPy, and use both lagrangian dynamics and rigid body transformations to generate the trajectories.</p>
 									<div class="text-center">
-										<video width = "70%" controls> 
+										<video width = "60%" controls> 
 											<source src = "images/DICE_IN_BOX_fast.mp4" type = "video/mp4">
 										</video>
+										<p> A simulation of a dice being shaken around in a box.</p>
 									</div>
-									<p> A simulation of a dice being shaken around in a box.</p>
+
+									<div class="text-center">
+										<video width = "80%" controls> 
+											<source src = "images/trebuchet_vid.mp4" type = "video/mp4">
+										</video>
+										<p> A simulation of a Trebuchet firing.</p>
+									</div>
+									
 								</div>
-								<div class="modal-footer">
-								  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Next</button>
-								</div>
+		
 							  </div>
 							</div>
 						  </div>
-						  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+			  
+						<div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
 							<div class="modal-dialog modal-lg modal-dialog-centered">
 							  <div class="modal-content">
 								<div class="modal-header">
-								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2"><strong>Trebuchet Simulation</strong></h1>
+								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><strong>Line Follower</strong></h1>
 								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
-									<video width = "100%" controls> 
-										<source src = "images/trebuchet_vid.mp4" type = "video/mp4">
-									</video>
-									<p> A simulation of a trebuchet firing. </p>
-								</div>
-								<div class="modal-footer">
-								  <button class="btn btn-primary" data-bs-target="#modal1" data-bs-toggle="modal">Previous</button>
-								</div>
-							  </div>
-							</div>
-						  </div>
+									<p> I built a line following robot. I used SOLIDWORKS to design custom laser cut and 3D printed
+										parts, and KiCAD to design PCB's for my microcontrollers and other components. The robot uses
+										 a Raspberry Pi Pico W to read a downward facing camera and display its view on an OLED screen.
+										  The camera data is sent to a PIC32 microcontroller, which sends PWM signals to the drive motors
+										   based on a PID feedback loop. </p>
+									<div class="text-center">
 
-
-						  
-						<div class="modal fade" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-							<div class="modal-dialog  modal-dialog-centered">
-							  <div class="modal-content">
-								<div class="modal-header">
-								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><strong>Robot CAD Model</strong></h1>
-								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										<img src="images/ME433_CAD.jpg" alt="ME433 CAD" width="70%">
+										<p> SolidWorks CAD model</p>
+									</div>
 								</div>
-								<div class="modal-body">
-									<img src="images/ME433_CAD.jpg" alt="ME433 CAD" width="100%">
-								</div>
-								<style>
+								<!-- <style>
 									.indented-paragraph {
 									  margin-left: 20px; /* Adjust the value as needed */
 									}
-								  </style>
-								  <p> I built a line following robot. I used SOLIDWORKS to design custom laser cut and 3D printed parts, and KiCAD to design PCB's for my microcontrollers and other components. The robot uses a Raspberry Pi Pico W to read a downward facing camera and display its view on an OLED screen. The camera data is sent to a PIC32 microcontroller, which sends PWM signals to the drive motors based on a PID feedback loop. </p>
+								  </style> -->
+					
 
 								  <!-- <p class="indented-paragraph">Made with SOLIDWORKS.</p> -->
 								  
@@ -246,7 +240,7 @@
 
 
 						  <div class="modal fade" id="modal6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-							<div class="modal-dialog  modal-dialog-centered">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
 							  <div class="modal-content">
 								<div class="modal-header">
 								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><strong>"Junior" Minibot Redesign</strong></h1>
@@ -254,13 +248,16 @@
 								</div>
 								<div class="modal-body">
 									<p>I build combat robots with the Northwestern University Robotics Club. We compete in tournaments all over the country. Recently I've been redesigning one of our mini bots, Junior, to replace its aluminum chassis with a 3D printed unibody. I also design parts for our 30lb robots, and machine them using conversational and CNC milling.</p>
+									
 									<p> Junior is a minibot that fights alongside our 30lb combat robots allowing us to get a weight bonus. Currently it has an aluminum chassis that takes a long time to machine and repair. </p>
-									<img src="images/JR_frame.jpg" alt="ME433 CAD" width="100%">
-									<img src="images/JR_elec_front.jpg" alt="ME433 CAD" width="100%">
+									<div class="text-center">
+
+									<img src="images/JR_frame.jpg" alt="ME433 CAD" width="50%">
+									<img src="images/JR_elec_front.jpg" alt="ME433 CAD" width="50%">
 									<p> I'm working on replacing the aluminum chassis with a 3D printed unibody. This would drastically shorten the manufacturing time for each Junior minibot and also eliminate common fastener related failure points. </p>
 
-									<img src="images/CAD_3d_JR.jpg" alt="ME433 CAD" width="100%">
-									
+									<img src="images/CAD_3d_JR.jpg" alt="ME433 CAD" width="65%">
+									</div>
 								</div>
 								<div class="modal-footer">
 								  <button class="btn btn-primary" data-bs-target="#exampleModalToggle26" data-bs-toggle="modal">Next</button>
@@ -269,20 +266,24 @@
 							</div>
 						  </div>
 						  <div class="modal fade" id="exampleModalToggle26" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-							<div class="modal-dialog  modal-dialog-centered">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
 							  <div class="modal-content">
 								<div class="modal-header">
 								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2"><strong>Machining</strong></h1>
 								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 								</div>
 								<div class="modal-body">
+									<p>I've spent many hours in the machining shop on the mills making parts for our combat robots. Our most commonly used materials are aluminum, steel, and titanium.</p>
+
+									<div class="text-center">
+
 									<p style="text-align: center; font-weight: bold;">Machining a spacer</p>
-									<img src="images/circle_mill.jpg" alt="Machining a spacer" style="width: 100%;">
+									<img src="images/circle_mill.jpg" alt="Machining a spacer" style="width: 50%;">
 									<br><br>
 									<p style="text-align: center; font-weight: bold;">Pocketed frame piece</p>
-									<img src="images/pocket_part.jpg" alt="Pocketed frame piece" style="width: 100%;">
+									<img src="images/pocket_part.jpg" alt="Pocketed frame piece" style="width: 50%;">
 									<br><br>
-									<p>I've spent many hours in the machining shop on the mills making parts for our combat robots. Our most commonly used materials are aluminum, steel, and titanium.</p>
+									</div>
 								</div>
 								
 								<div class="modal-footer">
@@ -295,7 +296,7 @@
 
 
 						<div class="modal fade" id="modal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-							<div class="modal-dialog  modal-dialog-centered">
+							<div class="modal-dialog  modal-lg modal-dialog-centered">
 							  <div class="modal-content">
 								<div class="modal-header">
 								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel"><strong>Swarm Robot Behaviors</strong></h1>
@@ -303,41 +304,22 @@
 								</div>
 								<div class="modal-body">
 									<p>I simulated three robot swarm behaviors. The first uses "hop count" to determine a coordinate system and display a Northwestern N. The second sorts the robots into cocentric rings based on the Brazil nut effect. The third simulates Reynold's flocking. I also implemented the flocking behavior on a small swarm of real robots.</p>
-
-									<img src="images/swarm_hop_count.png" alt="ME433 CAD" width="100%">
-									<p> The robots in this simulated swarm do not know their absolute position from the start, except for two "node" robots on the bottom corners. The robots form a coordinate system by sending "hop count" messages to their neighbors that tell them how far away form each node they are. Using these hop counts, each robot can triangulate their approximate coordinates, and use them to decide whether or not they should light up to form the Northwestern N or not.</p>
-									<br><br>
-									<img src="images/swarm_brazil.png" alt="ME433 CAD" width="100%">
-									<p> These robots sort themselves based on their virtual sizes using the Brazil nut effect. The Brazil nut effect states that when a system of irregularly sized objects is subjected to some sort of shaking or vibration, the smallest objects will end up closest to whatever point of attraction exists. These robots model the effect by constantly updating their velocity vectors based on the sum of a gravity, repulsion, and random vector. After some time, the robots sort into cocentric rings based on size.</p>
-									<br><br>
-									<img src="images/swarm_flock_sim.png" alt="ME433 CAD" width="100%">
-									<p> These robots exhibit a Reynold's flocking behavior. They adjust their trajectories based on the sum of separation, cohesion, and alignment vectors, resulting in a coordinated flock. I also programmed a group of real robots with this method, shown on the next page.
-								
-								</div>
-	
-								  
-								<div class="modal-footer">
-								  <button class="btn btn-primary" data-bs-target="#exampleModalToggle23" data-bs-toggle="modal">Next</button>
-								</div>
-							  </div>
-							</div>
-						  </div>
-						  <div class="modal fade" id="exampleModalToggle23" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-							<div class="modal-dialog modal-dialog-centered">
-							  <div class="modal-content">
-								<div class="modal-header">
-								  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2"><strong>Robot Swarm Flocking</strong></h1>
-								  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-								</div>
-								<div class="modal-body">
-									<video width = "100%" controls> 
-										<source src = "images/swarm_flock_nosound.mp4" type = "video/mp4">
-									</video>
-									<p> A swarm of robots I programmed to exhibit Reynold's flocking behavior.  </p>
+									
+									<div class="text-center">
+										<video width = "50%" controls> 
+											<source src = "images/swarm_flock_nosound.mp4" type = "video/mp4">
+										</video>
+										<p> These robots exhibit a Reynold's flocking behavior. They adjust their trajectories based on the sum of separation, cohesion, and alignment vectors, resulting in a coordinated flock.</p>
+										<img src="images/swarm_hop_count.png" alt="ME433 CAD" width="50%">
+										<p> The robots in this simulated swarm do not know their absolute position from the start, except for two "node" robots on the bottom corners. The robots form a coordinate system by sending "hop count" messages to their neighbors that tell them how far away form each node they are. Using these hop counts, each robot can triangulate their approximate coordinates, and use them to decide whether or not they should light up to form the Northwestern N or not.</p>
+										<br><br>
+										<img src="images/swarm_brazil.png" alt="ME433 CAD" width="50%">
+										<p> These robots sort themselves based on their virtual sizes using the Brazil nut effect. The Brazil nut effect states that when a system of irregularly sized objects is subjected to some sort of shaking or vibration, the smallest objects will end up closest to whatever point of attraction exists. These robots model the effect by constantly updating their velocity vectors based on the sum of a gravity, repulsion, and random vector. After some time, the robots sort into cocentric rings based on size.</p>
+										<br><br>
+										
 									</div>
-								<div class="modal-footer">
-								  <button class="btn btn-primary" data-bs-target="#modal3" data-bs-toggle="modal">Previous</button>
 								</div>
+
 							  </div>
 							</div>
 						  </div>
@@ -526,10 +508,10 @@
   
 						  
 
-					</section>
-					<p> <small> If you would like to view the code, other photos, or have questions about my projects, please contact me.</small></p>
-					<br><br>
+						<section>
+							<br><br>
 							<div class="col-4 col-12-small">
+								<p>Contact Me:</p>
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
@@ -537,12 +519,15 @@
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										yannikechriotis2024@u.northwestern.edu
+										yanni2002@gmail.com
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">LinkedIn</span></h3>
+										<a href="https://www.linkedin.com/in/yanni-kechriotis/" target="_blank">https://www.linkedin.com/in/yanni-kechriotis/</a>
 									</li>
 								</ul>
 							</div>
-						</div>
-					</section>
+						</section>
 
 
 			</div>
