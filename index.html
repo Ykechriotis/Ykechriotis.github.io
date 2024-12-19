@@ -31,27 +31,24 @@
 							</h2>
 						</header>
 						<p>I am a Master's student at Northwestern University studying <b>mechanical engineering </b>. In June 2024 I graduated from Northwestern with a Bachelor’s in mechanical engineering with a concentration in <b> robotics </b> and a minor in <b>computer science. </b> I also spent a semester abroad at ETH Zurich in Switzerland, where I took Master’s level classes in Robotics focusing on autonomous vehicles. </p>
-						<p>I’ve had a broad range of internship experience. In 2022 I worked at Maglev Aero, a small startup in Boston developing new eVTOL propulsion technologies. In 2023 I worked as a manufacturing engineering co-op in Honda’s Marysville Auto Plant. Currently I’m an intern at Oshkosh Corporation in the Autonomy and Active Safety department. I'm looking for full time positions after graduating with my Master’s in March 2025 where I can gain more experience designing, building, and programming robots. </p>
+						<p>I’ve had a broad range of internship experience. In 2022 I worked at Maglev Aero, a small startup in Boston developing new eVTOL propulsion technologies. In 2023 I worked as a manufacturing engineering co-op in Honda’s Marysville Auto Plant. Last summer I was an intern at Oshkosh Corporation in the Autonomy and Active Safety department. I'm looking for full time positions after graduating with my Master’s in March 2025 where I can gain more experience designing, building, and programming robots. </p>
 					</section>
 					
 					<section id="two">
 						<h2> Engineering Projects</h2>
 						<div class="row">
 							
-
 							<article class="col-6 col-12-xsmall work-item">
 
 								<div class="image2-container2">
 									<div class="image2-overlay"></div>
-									<img src="images/haptic_robot.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modalfinger">
-									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modalfinger">View</div>
+									<img src="images/doodle_droid.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modaldoodle">
+									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modaldoodle">View</div>
 								</div>
 								
-								<h3><b> Haptic Telemanipulation Capstone Project</b></h3>
-								<p> <b> Skills: </b> CAD (Onshape), Mechanical design, Mechatronics</p>
+								<h3><b> Doodle Droid</b></h3>
+								<p> <b> Skills: </b> ROS2, Python, MoveIt, RViz, Python, OpenCV</p>
 							</article>
-
-
 							
 							<article class="col-6 col-12-xsmall work-item">
 
@@ -65,6 +62,18 @@
 								<p> <b> Skills: </b> Python, OpenCV, State Estimation, Multi-agent path planning, PID Control, Linux, Git, Docker</p>
 							</article>
 
+
+							<article class="col-6 col-12-xsmall work-item">
+
+								<div class="image2-container2">
+									<div class="image2-overlay"></div>
+									<img src="images/haptic_robot.png" class="image2 fit btn-primary" data-bs-toggle="modal" data-bs-target="#modalfinger">
+									<div class="view-text" data-bs-toggle="modal" data-bs-target="#modalfinger">View</div>
+								</div>
+								
+								<h3><b> Haptic Telemanipulation Capstone Project</b></h3>
+								<p> <b> Skills: </b> CAD (Onshape), Mechanical design, Mechatronics</p>
+							</article>
 
 
 							<article class="col-6 col-12-xsmall work-item">
@@ -490,12 +499,65 @@
 
 								</div>
 
-
+							
 								</div>
 
 							</div>
 							</div>
 						</div>
+
+
+						<div class="modal fade" id="modaldoodle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+							<div class="modal-content">
+								<div class="modal-header">
+								<h1 class="modal-title fs-5" id="exampleModalLabel"><strong>Doodle Droid</strong></h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+								<p> For the final project of ME495 Embedded Systems in Robotics at Northwestern, groups of five students use Franka Emika Panda robot arms to create various behaviors, tasks, or games. My group chose to have our robot draw portraits, and called it the "Doodle Droid." </p>
+								<div class="text-center">
+									
+									<video width = "80%" controls> 
+										<source src = "images/luffy_drawing.mp4" type = "video/MP4">
+									</video>
+									<p>Doodle droid timelapse</p>
+	
+								</div>
+								<p> 
+									Almost all of our code was written as ROS2 Python nodes. We controlled the robot arm movements using a custom wrapper
+									around the MoveIt ROS2 interface. The robot first determines the pose of the drawing surface using the RGB camera of a 
+									RealSense mounted to the robot arm to detect four AprilTags in the paper corners. Then, an image is inputted either by 
+									file or live through a webcam. The image is converted into lines, and a route planner determines the order in which to 
+									draw lines using a greedy travelling salesmen-like algorithm.  
+								</p>
+
+								<div class="text-center">
+
+									<img src="images/franka_rviz.png" alt="finger" width="80%">
+									<p> Franka MoveIt RViz sim</p>
+
+								</div>
+
+								<p> 
+									My main contribution to the project was writing the calibrator node, which detects the paper pose, allowing the robot
+									to draw the picture with any paper orientation and table height. I wanted to achieve an accurate paper surface height 
+									within 1mm to be able to draw consistent line thicknesses. It was difficult to get this level of precision, but after
+									performing an extrinsic handeye camera calibration, intrinsic calibration, and by averaging 120 detected AprilTag poses,
+									I achieved the desired accuracy.
+								</p>
+
+								<p> 
+									I also wrote some OpenCV code to remove background from the live webcam photos and preprocess them so they convert
+									better into line images. Finally I designed a spring loaded pen attachment, that afforded us some imprecision in robot
+									movements.
+								</p>
+
+
+							</div>
+							</div>
+						</div>
+
 
   
 						  
